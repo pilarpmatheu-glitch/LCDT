@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Calma Después de la Tormenta | Orientación y Acompañamiento</title>
+    <!-- Fuente Inter para legibilidad moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- Header Navegación -->
+    <header>
+        <div class="container nav-container">
+           <a href="#" class="logo">
+    <img 
+        src="./accects/img/ChatGPT Image 18 ago 2026, 10_50_37 p.m.png" 
+        alt="Logo La Calma"
+        class="profile-image"
+    >
+    <span>LA CALMA</span>
+</a>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Abrir Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#evaluacion" class="nav-link">¿Cómo estoy?</a></li>
+                <li><a href="#seguimiento" class="nav-link">Seguimiento</a></li>
+                <li><a href="#comunidad" class="nav-link">Comunidad</a></li>
+                <li><a href="#privacidad" class="nav-link">Privacidad</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>LA CALMA DESPUÉS DE LA TORMENTA</h1>
+                <p class="slogan">“Más allá del silencio. Porque incluso entre luces y sombras tu voz importa.”</p>
+                
+                <!-- Subtítulo Frases Diarias -->
+<div class="daily-quote-container">
+    <span class="daily-quote-title">Frases diarias</span>
+    <p class="daily-quote-text" id="dailyQuote"></p>
+</div>
+
+                <div class="hero-buttons">
+                    <a href="#evaluacion" class="btn btn-primary">Realizar mi evaluación</a>
+                    <a href="#privacidad" class="btn btn-secondary">Conocer la plataforma</a>
+                </div>
+            </div>
+            <div>
+                <!-- Ilustración Vectorial Conceptual -->
+               <img src="./accects/img/ChatGPT Image 18 ago 2026, 10_50_37 p.m.png" alt="La Calma Después de la Tormenta" class="hero-image"
+    >
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Formulario ¿Cómo estoy hoy? -->
+    <section id="evaluacion" class="container">
+        <h2 class="section-title">¿Cómo estoy hoy?</h2>
+        <p class="section-subtitle">Tómate un momento para reflexionar sobre cómo te has sentido en estos últimos días. Responde con calma, no hay respuestas correctas o incorrectas.</p>
+
+        <form id="mentalForm" onsubmit="return false;">
+            <div class="card">
+                <!-- Pregunta 1 -->
+                <div class="question-group">
+                    <p class="question-title">1. ¿Durante los últimos días te sentiste triste, preocupado/a o angustiado/a con frecuencia?</p>
+                    <div class="options-grid">
+                        <label class="option-label"><input type="radio" name="q1" value="0" required> Nunca</label>
+                        <label class="option-label"><input type="radio" name="q1" value="1"> Algunas veces</label>
+                        <label class="option-label"><input type="radio" name="q1" value="2"> Frecuentemente</label>
+                        <label class="option-label"><input type="radio" name="q1" value="3"> Siempre</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 2 -->
+                <div class="question-group">
+                    <p class="question-title">2. ¿Alguien te insultó, ridiculizó o hizo comentarios que te hicieron sentir mal?</p>
+                    <div class="options-grid">
+                        <label class="option-label"><input type="radio" name="q2" value="0" required> Nunca</label>
+                        <label class="option-label"><input type="radio" name="q2" value="1"> Algunas veces</label>
+                        <label class="option-label"><input type="radio" name="q2" value="2"> Frecuentemente</label>
+                        <label class="option-label"><input type="radio" name="q2" value="3"> Siempre</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 3 -->
+                <div class="question-group">
+                    <p class="question-title">3. ¿Sentiste que otras personas te excluyeron intencionalmente?</p>
+                    <div class="options-grid">
+                        <label class="option-label"><input type="radio" name="q3" value="0" required> Nunca</label>
+                        <label class="option-label"><input type="radio" name="q3" value="1"> Algunas veces</label>
+                        <label class="option-label"><input type="radio" name="q3" value="2"> Frecuentemente</label>
+                        <label class="option-label"><input type="radio" name="q3" value="3"> Siempre</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 4 -->
+                <div class="question-group">
+                    <p class="question-title">4. ¿Recibiste mensajes, publicaciones o comentarios en redes sociales que te hicieron sentir incómodo/a o lastimado/a?</p>
+                    <div class="options-grid">
+                        <label class="option-label"><input type="radio" name="q4" value="0" required> Nunca</label>
+                        <label class="option-label"><input type="radio" name="q4" value="1"> Algunas veces</label>
+                        <label class="option-label"><input type="radio" name="q4" value="2"> Frecuentemente</label>
+                        <label class="option-label"><input type="radio" name="q4" value="3"> Siempre</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 5 -->
+                <div class="question-group">
+                    <p class="question-title">5. ¿Sentiste miedo o inseguridad al estar cerca de alguna persona o entorno?</p>
+                    <div class="options-grid">
+                        <label class="option-label"><input type="radio" name="q5" value="0" required> Nunca</label>
+                        <label class="option-label"><input type="radio" name="q5" value="1"> Algunas veces</label>
+                        <label class="option-label"><input type="radio" name="q5" value="2"> Frecuentemente</label>
+                        <label class="option-label"><input type="radio" name="q5" value="3"> Siempre</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 6 -->
+                <div class="question-group">
+                    <p class="question-title">6. ¿Sentiste que no tenías a quién contarle lo que estás viviendo?</p>
+                    <div class="options-grid">
+                        <label class="option-label"><input type="radio" name="q6" value="0" required> Nunca</label>
+                        <label class="option-label"><input type="radio" name="q6" value="1"> Algunas veces</label>
+                        <label class="option-label"><input type="radio" name="q6" value="2"> Frecuentemente</label>
+                        <label class="option-label"><input type="radio" name="q6" value="3"> Siempre</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 7 -->
+                <div class="question-group">
+                    <p class="question-title">7. ¿Los problemas que estás atravesando están afectando tus ganas de estudiar, dormir, comer o actividades que disfrutás?</p>
+                    <div class="options-grid">
+                        <label class="option-label"><input type="radio" name="q7" value="0" required> Nunca</label>
+                        <label class="option-label"><input type="radio" name="q7" value="1"> Algunas veces</label>
+                        <label class="option-label"><input type="radio" name="q7" value="2"> Frecuentemente</label>
+                        <label class="option-label"><input type="radio" name="q7" value="3"> Siempre</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 8 -->
+                <div class="question-group">
+                    <p class="question-title">8. ¿Sentís que la situación se está repitiendo o empeorando?</p>
+                    <div class="options-grid">
+                        <label class="option-label"><input type="radio" name="q8" value="0" required> Nunca</label>
+                        <label class="option-label"><input type="radio" name="q8" value="1"> Algunas veces</label>
+                        <label class="option-label"><input type="radio" name="q8" value="2"> Frecuentemente</label>
+                        <label class="option-label"><input type="radio" name="q8" value="3"> Siempre</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 9 -->
+                <div class="question-group">
+                    <p class="question-title">9. ¿Intentaste hablar con alguien sobre lo que está pasando?</p>
+                    <div class="options-grid">
+                        <label class="option-label"><input type="radio" name="q9" value="0" required> Sí, y ayudó</label>
+                        <label class="option-label"><input type="radio" name="q9" value="1"> Intenté, pero no sirvió</label>
+                        <label class="option-label"><input type="radio" name="q9" value="2"> No me animé aún</label>
+                        <label class="option-label"><input type="radio" name="q9" value="3"> No tengo a quién</label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 10 -->
+                <div class="question-group">
+                    <p class="question-title">10. ¿Sentís que necesitás ayuda para afrontar esta situación?</p>
+                    <div class="options-grid">
+                        <label class="option-label"><input type="radio" name="q10" value="0" required> No creo necesitar</label>
+                        <label class="option-label"><input type="radio" name="q10" value="1"> Tal vez un poco</label>
+                        <label class="option-label"><input type="radio" name="q10" value="2"> Bastante</label>
+                        <label class="option-label"><input type="radio" name="q10" value="3"> Sí, urgentemente</label>
+                    </div>
+                </div>
+                <!-- Pregunta 11 -->
+<div class="question-group">
+    <p class="question-title">11. ¿Sentiste que alguien intentó controlar con quién hablás, dónde estás o con quién te relacionás?</p>
+    <div class="options-grid">
+        <label class="option-label"><input type="radio" name="q11" value="0" required> Nunca</label>
+        <label class="option-label"><input type="radio" name="q11" value="1"> Algunas veces</label>
+        <label class="option-label"><input type="radio" name="q11" value="2"> Frecuentemente</label>
+        <label class="option-label"><input type="radio" name="q11" value="3"> Siempre</label>
+    </div>
+</div>
+
+<!-- Pregunta 12 -->
+<div class="question-group">
+    <p class="question-title">12. ¿Te sentiste presionado/a para hacer algo que no querías hacer?</p>
+    <div class="options-grid">
+        <label class="option-label"><input type="radio" name="q12" value="0" required> Nunca</label>
+        <label class="option-label"><input type="radio" name="q12" value="1"> Algunas veces</label>
+        <label class="option-label"><input type="radio" name="q12" value="2"> Frecuentemente</label>
+        <label class="option-label"><input type="radio" name="q12" value="3"> Siempre</label>
+    </div>
+</div>
+
+<!-- Pregunta 13 -->
+<div class="question-group">
+    <p class="question-title">13. ¿Evitaste ir a la escuela o participar de actividades por miedo a encontrarte con alguien o por cómo podrías sentirte?</p>
+    <div class="options-grid">
+        <label class="option-label"><input type="radio" name="q13" value="0" required> Nunca</label>
+        <label class="option-label"><input type="radio" name="q13" value="1"> Algunas veces</label>
+        <label class="option-label"><input type="radio" name="q13" value="2"> Frecuentemente</label>
+        <label class="option-label"><input type="radio" name="q13" value="3"> Siempre</label>
+    </div>
+</div>
+
+<!-- Pregunta 14 -->
+<div class="question-group">
+    <p class="question-title">14. ¿Sentiste que otras personas difundieron rumores o información sobre vos sin tu consentimiento?</p>
+    <div class="options-grid">
+        <label class="option-label"><input type="radio" name="q14" value="0" required> Nunca</label>
+        <label class="option-label"><input type="radio" name="q14" value="1"> Algunas veces</label>
+        <label class="option-label"><input type="radio" name="q14" value="2"> Frecuentemente</label>
+        <label class="option-label"><input type="radio" name="q14" value="3"> Siempre</label>
+    </div>
+</div>
+
+<!-- Pregunta 15 -->
+<div class="question-group">
+    <p class="question-title">15. ¿Te costó concentrarte en clase o realizar tus actividades debido a lo que estabas viviendo?</p>
+    <div class="options-grid">
+        <label class="option-label"><input type="radio" name="q15" value="0" required> Nunca</label>
+        <label class="option-label"><input type="radio" name="q15" value="1"> Algunas veces</label>
+        <label class="option-label"><input type="radio" name="q15" value="2"> Frecuentemente</label>
+        <label class="option-label"><input type="radio" name="q15" value="3"> Siempre</label>
+    </div>
+</div>
+
+<!-- Pregunta 16 -->
+<div class="question-group">
+    <p class="question-title">16. ¿Sentiste que alguien te amenazó, intimidó o intentó asustarte?</p>
+    <div class="options-grid">
+        <label class="option-label"><input type="radio" name="q16" value="0" required> Nunca</label>
+        <label class="option-label"><input type="radio" name="q16" value="1"> Algunas veces</label>
+        <label class="option-label"><input type="radio" name="q16" value="2"> Frecuentemente</label>
+        <label class="option-label"><input type="radio" name="q16" value="3"> Siempre</label>
+    </div>
+</div>
+
+<!-- Pregunta 17 -->
+<div class="question-group">
+    <p class="question-title">17. ¿Te sentiste solo/a incluso cuando estabas acompañado/a por otras personas?</p>
+    <div class="options-grid">
+        <label class="option-label"><input type="radio" name="q17" value="0" required> Nunca</label>
+        <label class="option-label"><input type="radio" name="q17" value="1"> Algunas veces</label>
+        <label class="option-label"><input type="radio" name="q17" value="2"> Frecuentemente</label>
+        <label class="option-label"><input type="radio" name="q17" value="3"> Siempre</label>
+    </div>
+</div>
+
+<!-- Pregunta 18 -->
+<div class="question-group">
+    <p class="question-title">18. ¿Sentiste que debías ocultar lo que te pasaba para evitar problemas o preocupaciones?</p>
+    <div class="options-grid">
+        <label class="option-label"><input type="radio" name="q18" value="0" required> Nunca</label>
+        <label class="option-label"><input type="radio" name="q18" value="1"> Algunas veces</label>
+        <label class="option-label"><input type="radio" name="q18" value="2"> Frecuentemente</label>
+        <label class="option-label"><input type="radio" name="q18" value="3"> Siempre</label>
+    </div>
+</div>
+
+<!-- Pregunta 19 -->
+<div class="question-group">
+    <p class="question-title">19. ¿Sentiste que tus problemas estaban afectando tu relación con familiares, amigos o compañeros?</p>
+    <div class="options-grid">
+        <label class="option-label"><input type="radio" name="q19" value="0" required> Nunca</label>
+        <label class="option-label"><input type="radio" name="q19" value="1"> Algunas veces</label>
+        <label class="option-label"><input type="radio" name="q19" value="2"> Frecuentemente</label>
+        <label class="option-label"><input type="radio" name="q19" value="3"> Siempre</label>
+    </div>
+</div>
+
+<!-- Pregunta 20 -->
+<div class="question-group">
+    <p class="question-title">20. Si pudieras recibir apoyo de alguien en este momento, ¿sentís que te haría bien?</p>
+    <div class="options-grid">
+        <label class="option-label"><input type="radio" name="q20" value="0" required> No lo necesito</label>
+        <label class="option-label"><input type="radio" name="q20" value="1"> Tal vez</label>
+        <label class="option-label"><input type="radio" name="q20" value="2"> Sí, me ayudaría</label>
+        <label class="option-label"><input type="radio" name="q20" value="3"> Sí, lo necesito ahora</label>
+    </div>
+</div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <button type="button" class="btn btn-primary" id="calculateBtn">Obtener Orientación</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Semáforo de Resultado -->
+        <div class="semaforo-container" id="semaforoSection">
+            <h3 style="margin-bottom: 15px; color: var(--azul-principal);">Resultado Orientativo</h3>
+            <div class="lights-box">
+                <div class="light green" id="lightGreen"></div>
+                <div class="light orange" id="lightOrange"></div>
+                <div class="light red" id="lightRed"></div>
+            </div>
+
+            <div class="result-box verde" id="boxVerde">
+                <h4>🟢 Estado General Tranquilo</h4>
+                <p>Parece que no estás atravesando una situación preocupante en este momento.</p>
+                <p style="margin-top: 8px; font-weight: 500;">Seguí cuidando tu bienestar y recordá que siempre podés hablar con alguien si algo cambia.</p>
+            </div>
+
+            <div class="result-box naranja" id="boxNaranja">
+                <h4>🟠 Señales de Atención</h4>
+                <p>Tus respuestas muestran señales que podrían estar relacionadas con una situación de conflicto, presión o malestar emocional.</p>
+                <p style="margin-top: 8px; font-weight: 500;">Hablar con una persona de confianza, docente, preceptor/a, familiar o profesional puede ayudarte.</p>
+            </div>
+
+            <div class="result-box rojo" id="boxRojo">
+                <h4>🔴 Requerimiento de Apoyo</h4>
+                <p>Las respuestas indican que sería importante buscar acompañamiento para afrontar lo que sentís.</p>
+                <p style="margin-top: 8px; font-weight: 600;">Te recomendamos hablar lo antes posible con un adulto de confianza o un profesional de salud mental.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Seguimiento Semanal / Mensual -->
+    <section id="seguimiento" style="background-color: var(--blanco);">
+        <div class="container">
+            <h2 class="section-title">Seguimiento de Bienestar</h2>
+            <p class="section-subtitle">Observá cómo evoluciona tu estado de ánimo con el tiempo. Podés registrar el resultado de tu evaluación diaria o semanal.</p>
+
+            <div class="card">
+                <h3>Seguimiento Semanal</h3>
+                <p style="color: var(--texto-secundario); margin-bottom: 15px;">Completa tu evaluación diariamente. Al finalizar la semana verás una tendencia general.</p>
+
+                <div class="tracking-grid" id="weeklyGrid">
+                    <!-- Generado dinámicamente -->
+                </div>
+
+                <div style="display: flex; gap: 10px; justify-content: center; margin-top: 15px;">
+                    <button class="btn btn-secondary" onclick="registerToday()">Guardar Resultado de Hoy</button>
+                    <button class="btn" style="background:#e2e8f0;" onclick="resetTracking()">Reiniciar Registro</button>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 30px;">
+                <h3>Síntesis Mensual</h3>
+                <p style="color: var(--texto-secundario); margin-bottom: 15px;">Evolución global acumulada durante las últimas 4 semanas.</p>
+
+                <div class="tracking-grid" id="monthlyGrid">
+                    <div class="day-card"><span>Semana 1</span><div class="day-indicator" id="m1"></div></div>
+                    <div class="day-card"><span>Semana 2</span><div class="day-indicator" id="m2"></div></div>
+                    <div class="day-card"><span>Semana 3</span><div class="day-indicator" id="m3"></div></div>
+                    <div class="day-card"><span>Semana 4</span><div class="day-indicator" id="m4"></div></div>
+                </div>
+                <p id="monthlySummary" style="text-align: center; font-weight: 500; color: var(--azul-principal); margin-top: 10px;"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comunidad Anónima -->
+    <section id="comunidad" class="container">
+        <h2 class="section-title">Tu experiencia puede ayudar a alguien más</h2>
+        <p class="section-subtitle">Compartí tus vivencias de manera totalmente anónima. Leé cómo otros/as afrontaron situaciones difíciles.</p>
+
+        <div class="card">
+            <form class="post-form" id="anonForm">
+                <textarea class="post-textarea" id="postContent" placeholder="Escribí aquí tu reflexión o experiencia... (Ejemplo: Me sentía excluido/a de mi grupo de amigos y no sabía cómo hablarlo...)" required></textarea>
+                <div class="privacy-warning">
+                    🔒 <strong>Aviso de Privacidad:</strong> Tu publicación es 100% anónima. No compartas nombres, escuelas, teléfonos ni información que permita identificarte a vos o a otros.
+                </div>
+                <button type="submit" class="btn btn-primary" style="align-self: flex-end;">Publicar de forma anónima</button>
+            </form>
+
+            <h3 style="margin-bottom: 20px; color: var(--azul-principal);">Experiencias Compartidas</h3>
+            <div class="posts-feed" id="postsFeed">
+                <!-- Posts cargados con JS / LocalStorage -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Privacidad -->
+    <section id="privacidad" class="container">
+        <div class="privacy-section">
+            <h2 style="font-size: 2rem; margin-bottom: 15px;">Tu privacidad importa</h2>
+            <p style="max-width: 700px; margin: 0 auto 20px auto; opacity: 0.9;">Esta plataforma fue pensada para proteger tu intimidad de forma absoluta. No solicitamos nombre completo, DNI, teléfono, dirección ni correo electrónico.</p>
+            <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 12px; display: inline-block;">
+                <p style="font-size: 0.9rem;">⚠️ <strong>Aclaración Importante:</strong> Esta plataforma es una herramienta pedagógica de orientación y reflexión. No realiza diagnósticos médicos ni sustituye la atención de un profesional de salud mental.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <h3 style="color: var(--verde-menta);">LA CALMA DESPUÉS DE LA TORMENTA</h3>
+            <p style="font-style: italic; opacity: 0.8;">“Más allá del silencio. Porque incluso entre luces y sombras tu voz importa.”</p>
+            <p style="font-size: 0.85rem; opacity: 0.6;">Proyecto educativo de orientación y acompañamiento sobre salud mental.</p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de Ayuda Inmediata -->
+    <button class="floating-help-btn" id="floatingHelpBtn">
+        <span>🆘</span> AYUDA INMEDIATA
+    </button>
+
+    <!-- Modal de Ayuda Inmediata -->
+    <div class="modal" id="helpModal">
+        <div class="modal-card">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <h3 style="color: var(--semaforo-rojo); margin-bottom: 10px;">Recursos de Ayuda Inmediata</h3>
+            <p style="font-size: 0.95rem; color: var(--texto-secundario);">Si estás pasando por un momento difícil o sentís que la situación te supera, no estás solo/a. Buscá apoyo en:</p>
+
+            <ul class="help-list">
+                <li class="help-item">👨‍👩‍👧 <strong>Hablar con un familiar o adulto de confianza</strong></li>
+                <li class="help-item">🏫 <strong>Contactar a un docente, tutor/a o preceptor/a</strong></li>
+                <li class="help-item">🩺 <strong>Solicitar turno con un profesional de salud mental</strong></li>
+                <li class="help-item">🚨 <strong>Llamar a los servicios de emergencia locales si existe riesgo inmediato</strong></li>
+            </ul>
+
+            <!-- Espacio reservado para teléfonos oficiales por país -->
+            <div style="margin-top: 20px; padding: 12px; background: var(--azul-claro); border-radius: 10px; font-size: 0.85rem;">
+                <strong>Líneas Oficiales de Orientación:</strong>
+                <p style="margin-top: 5px; color: var(--texto-secundario);">[Espacio configurado para vincular las líneas gratuitas nacionales de asistencia en salud mental e infancia].</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* ===================================================
+           LOGICA INTERACTIVA - LA CALMA DESPUÉS DE LA TORMENTA
+           =================================================== */
+
+        // Array para controlar días de la semana
+        const daysOfWeek = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+        let lastResultScore = null;
+
+document.addEventListener('DOMContentLoaded', () => {
+    initOptionStyles();
+    initNavigation();
+    initModal();
+    initPosts();
+    renderWeeklyTracker();
+    updateMonthlySummary();
+    showDailyQuote();
+});
+
+        // Manejo visual de selección de opciones Radio
+        function initOptionStyles() {
+            const labels = document.querySelectorAll('.option-label');
+            labels.forEach(label => {
+                label.addEventListener('click', function() {
+                    const name = this.querySelector('input').name;
+                    document.querySelectorAll(`input[name="${name}"]`).forEach(input => {
+                        input.parentElement.classList.remove('selected');
+                    });
+                    this.classList.add('selected');
+                });
+            });
+        }
+
+        // Navegación Responsive Toggle
+        function initNavigation() {
+            const hamburger = document.getElementById('hamburgerBtn');
+            const navMenu = document.getElementById('navMenu');
+
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                });
+            });
+        }
+
+        // Cálculo del Formulario y Semáforo
+        document.getElementById('calculateBtn').addEventListener('click', () => {
+            const form = document.getElementById('mentalForm');
+            const formData = new FormData(form);
+            let total = 0;
+            let answeredCount = 0;
+
+            for (let i = 1; i <= 20; i++) {
+                const val = formData.get(`q${i}`);
+                if (val !== null) {
+                    total += parseInt(val);
+                    answeredCount++;
+                }
+            }
+
+            if (answeredCount < 10) {
+                alert('Por favor, responde todas las preguntas para obtener una orientación adecuada.');
+                return;
+            }
+
+            // Puntaje máximo posible: 30
+            const percentage = (total / 60) * 100;
+            lastResultScore = percentage;
+
+            // Resetear luces
+            document.getElementById('lightGreen').classList.remove('active');
+            document.getElementById('lightOrange').classList.remove('active');
+            document.getElementById('lightRed').classList.remove('active');
+
+            document.getElementById('boxVerde').classList.remove('active');
+            document.getElementById('boxNaranja').classList.remove('active');
+            document.getElementById('boxRojo').classList.remove('active');
+
+            const helpBtn = document.getElementById('floatingHelpBtn');
+
+            // Escala del Semáforo
+            if (percentage <= 30) {
+                document.getElementById('lightGreen').classList.add('active');
+                document.getElementById('boxVerde').classList.add('active');
+                helpBtn.classList.remove('alert-mode');
+            } else if (percentage <= 60) {
+                document.getElementById('lightOrange').classList.add('active');
+                document.getElementById('boxNaranja').classList.add('active');
+                helpBtn.classList.remove('alert-mode');
+            } else {
+                document.getElementById('lightRed').classList.add('active');
+                document.getElementById('boxRojo').classList.add('active');
+                // Activar modo alerta en botón de ayuda
+                helpBtn.classList.add('alert-mode');
+            }
+
+            // Desplazar suave hacia el resultado
+            document.getElementById('semaforoSection').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        function initModal() {
+            const modal = document.getElementById('helpModal');
+            const openBtn = document.getElementById('floatingHelpBtn');
+            const closeBtn = document.getElementById('closeModal');
+
+            openBtn.addEventListener('click', () => modal.classList.add('open'));
+            closeBtn.addEventListener('click', () => modal.classList.remove('open'));
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) modal.classList.remove('open');
+            });
+        }
+
+        function renderWeeklyTracker() {
+            const container = document.getElementById('weeklyGrid');
+            container.innerHTML = '';
+
+            const history = JSON.parse(localStorage.getItem('calma_weekly')) || {};
+
+            daysOfWeek.forEach((day, index) => {
+                const card = document.createElement('div');
+                card.className = 'day-card';
+                
+                const dayStatus = history[index]; // 'verde', 'naranja', 'rojo'
+                let statusClass = '';
+                if(dayStatus) statusClass = dayStatus;
+
+                card.innerHTML = `
+                    <span style="font-size:0.85rem; font-weight:600;">${day}</span>
+                    <div class="day-indicator ${statusClass}"></div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function registerToday() {
+            if (lastResultScore === null) {
+                alert('Primero realiza la evaluación en la sección "¿Cómo estoy?"');
+                return;
+            }
+
+            let status = 'verde';
+            if (lastResultScore > 30 && lastResultScore <= 60) status = 'naranja';
+            if (lastResultScore > 60) status = 'rojo';
+
+            let history = JSON.parse(localStorage.getItem('calma_weekly')) || {};
+            
+            // Asignar al día actual
+            const todayIndex = new Date().getDay(); // 0 Dom, 1 Lun...
+            // Convertir a base Lunes (0) a Domingo (6)
+            const adjustedIndex = todayIndex === 0 ? 6 : todayIndex - 1;
+
+            history[adjustedIndex] = status;
+            localStorage.setItem('calma_weekly', JSON.stringify(history));
+
+            renderWeeklyTracker();
+            updateMonthlySummary();
+            alert('Resultado registrado en tu seguimiento semanal.');
+        }
+
+        function resetTracking() {
+            localStorage.removeItem('calma_weekly');
+            renderWeeklyTracker();
+            updateMonthlySummary();
+        }
+
+        function updateMonthlySummary() {
+            const history = JSON.parse(localStorage.getItem('calma_weekly')) || {};
+            const values = Object.values(history);
+            
+            const summaryText = document.getElementById('monthlySummary');
+            
+            if(values.length === 0) {
+                summaryText.textContent = "Comienza a registrar tu evaluación diaria para ver el resumen mensual.";
+                document.getElementById('m1').className = "day-indicator";
+                return;
+            }
+
+            const redCount = values.filter(v => v === 'rojo').length;
+            const orangeCount = values.filter(v => v === 'naranja').length;
+
+            if (redCount >= 2) {
+                document.getElementById('m1').className = "day-indicator rojo";
+                summaryText.textContent = "Se observaron señales frecuentes de alerta durante el período. Considerá buscar acompañamiento profesional.";
+            } else if (orangeCount >= 2 || redCount === 1) {
+                document.getElementById('m1').className = "day-indicator naranja";
+                summaryText.textContent = "Durante algunas jornadas aparecieron señales que podrían justificar hablar con alguien de confianza.";
+            } else {
+                document.getElementById('m1').className = "day-indicator verde";
+                summaryText.textContent = "Tus resultados se mantuvieron mayormente estables y en zona de tranquilidad.";
+            }
+        }
+
+        function initPosts() {
+            const defaultPosts = [
+                {
+                    id: 1,
+                    text: "Me sentía excluido/a de mi grupo de amigos y no sabía cómo hablarlo. Finalmente se lo conté a un docente y me ayudó a encontrar una solución.",
+                    reactions: { identify: 12, helped: 8, thanks: 15 }
+                },
+                {
+                    id: 2,
+                    text: "Sentía mucha ansiedad antes de ir a la escuela por comentarios de otros compañeros. Hablarlo con mi familia me quitó un peso enorme de encima.",
+                    reactions: { identify: 9, helped: 14, thanks: 10 }
+                }
+            ];
+
+            let posts = JSON.parse(localStorage.getItem('calma_posts'));
+            if (!posts) {
+                posts = defaultPosts;
+                localStorage.setItem('calma_posts', JSON.stringify(posts));
+            }
+
+            renderPosts(posts);
+
+            document.getElementById('anonForm').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const textarea = document.getElementById('postContent');
+                const text = textarea.value.trim();
+
+                if (text) {
+                    const newPost = {
+                        id: Date.now(),
+                        text: text,
+                        reactions: { identify: 0, helped: 0, thanks: 0 }
+                    };
+
+                    posts.unshift(newPost);
+                    localStorage.setItem('calma_posts', JSON.stringify(posts));
+                    renderPosts(posts);
+                    textarea.value = '';
+                }
+            });
+        }
+
+        function renderPosts(posts) {
+            const feed = document.getElementById('postsFeed');
+            feed.innerHTML = '';
+
+            posts.forEach(post => {
+                const article = document.createElement('article');
+                article.className = 'post-card';
+                article.innerHTML = `
+                    <p style="color: var(--texto-principal); font-size: 0.95rem;">"${escapeHtml(post.text)}"</p>
+                    <div class="post-reactions">
+                        <button class="reaction-btn" onclick="react(${post.id}, 'identify')">🤝 Me identifico (${post.reactions.identify})</button>
+                        <button class="reaction-btn" onclick="react(${post.id}, 'helped')">💡 Me ayudó (${post.reactions.helped})</button>
+                        <button class="reaction-btn" onclick="react(${post.id}, 'thanks')">💜 Gracias por compartir (${post.reactions.thanks})</button>
+                    </div>
+                `;
+                feed.appendChild(article);
+            });
+        }
+
+        function react(postId, type) {
+            let posts = JSON.parse(localStorage.getItem('calma_posts')) || [];
+            const post = posts.find(p => p.id === postId);
+            if (post) {
+                post.reactions[type]++;
+                localStorage.setItem('calma_posts', JSON.stringify(posts));
+                renderPosts(posts);
+            }
+        }
+
+        // Sanitización para evitar XSS
+        function escapeHtml(text) {
+            return text
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+        // ==========================================
+// FRASES DIARIAS - 365 FRASES
+// ==========================================
+
+const dailyQuotes = [
+    "No tenés que atravesar todo en silencio.",
+    "Hablar de lo que sentís también es una forma de cuidarte.",
+    "Lo que sentís importa, incluso cuando no sabés cómo explicarlo.",
+    "Pedir ayuda no te hace débil.",
+    "Tu voz merece ser escuchada.",
+    "Está bien no estar bien todo el tiempo.",
+    "No minimices lo que te pasa.",
+    "Siempre podés hablar con alguien de confianza.",
+    "Cuidarte también significa escuchar lo que sentís.",
+    "No tenés que resolver todo hoy.",
+    "A veces, hablar es el primer paso.",
+    "Tus emociones tienen un lugar.",
+    "No estás obligado/a a fingir que todo está bien.",
+    "Lo que te preocupa merece atención.",
+    "Ser fuerte también puede significar pedir ayuda.",
+    "No estás solo/a en lo que sentís.",
+    "Merecés sentirte seguro/a y acompañado/a.",
+    "Tus límites también importan.",
+    "Decir 'no' está bien cuando algo te incomoda.",
+    "No tenés que agradarle a todo el mundo.",
+    "Tu bienestar importa tanto como el de los demás.",
+    "Hablar puede hacer que una preocupación pese un poco menos.",
+    "No guardes todo adentro por miedo a molestar.",
+    "Hay personas dispuestas a escucharte.",
+    "Tus sentimientos no necesitan permiso para existir.",
+    "No sos una carga por necesitar apoyo.",
+    "Tomarte un momento también es cuidarte.",
+    "Respirar y hacer una pausa puede ayudarte a ordenar lo que sentís.",
+    "No todo problema tiene que resolverse inmediatamente.",
+    "Merecés vínculos donde puedas ser vos mismo/a.",
+    "Nadie debería hacerte sentir menos.",
+    "El respeto también es una forma de cuidado.",
+    "Tu tranquilidad vale.",
+    "No normalices aquello que te hace sentir mal.",
+    "Si algo te incomoda, está bien decirlo.",
+    "No tenés que justificar cada emoción que sentís.",
+    "Tu experiencia es válida.",
+    "Hablar con alguien puede ayudarte a ver otras posibilidades.",
+    "No estás obligado/a a enfrentar una situación difícil solo/a.",
+    "Buscar apoyo es una decisión valiosa.",
+    "Tu bienestar merece tiempo y atención.",
+    "A veces, lo que necesitás es que alguien te escuche.",
+    "No hace falta tener las palabras perfectas para pedir ayuda.",
+    "Podés empezar diciendo simplemente: 'Necesito hablar'.",
+    "Lo que te pasa merece ser tomado en serio.",
+    "No te compares con los demás.",
+    "Cada persona atraviesa las cosas de manera diferente.",
+    "Tu proceso no tiene que parecerse al de nadie.",
+    "Permitite avanzar a tu propio ritmo.",
+    "No todo tiene que ser perfecto.",
+    "Equivocarte no define quién sos.",
+    "Un día difícil no significa una vida difícil.",
+    "Una situación complicada puede cambiar.",
+    "No pierdas de vista que las cosas pueden mejorar.",
+    "Mañana puede ser diferente.",
+    "Date permiso para descansar.",
+    "Tu mente también necesita pausas.",
+    "Descansar no es perder el tiempo.",
+    "Cuidar tu energía también es importante.",
+    "Escucharte es una forma de conocerte.",
+    "Tus necesidades también cuentan.",
+    "No dejes tus emociones siempre para después.",
+    "Preguntarte cómo estás también es autocuidado.",
+    "Está bien necesitar un momento para vos.",
+    "Está bien cambiar de opinión.",
+    "Está bien pedir espacio cuando lo necesitás.",
+    "Está bien acercarte cuando necesitás compañía.",
+    "No hay una única manera de sentirse bien.",
+    "Encontrá pequeñas cosas que te hagan sentir acompañado/a.",
+    "Una conversación puede cambiar un día.",
+    "Una persona que escucha puede marcar una diferencia.",
+    "Nunca sabés cuánto puede ayudar una palabra amable.",
+    "También podés ser esa persona que escucha a alguien más.",
+    "Preguntar '¿estás bien?' puede ser importante.",
+    "Escuchar sin juzgar también es acompañar.",
+    "No necesitás tener todas las respuestas para estar presente.",
+    "La empatía empieza cuando intentamos comprender.",
+    "Ser amable nunca está de más.",
+    "Tus palabras pueden tener impacto.",
+    "Elegí palabras que construyan y no destruyan.",
+    "El respeto debería estar presente en cualquier vínculo.",
+    "Nadie merece ser humillado.",
+    "Nadie merece ser excluido intencionalmente.",
+    "Nadie merece recibir insultos constantemente.",
+    "El bullying no es una broma cuando lastima.",
+    "Si algo se repite y te hace sentir mal, merece atención.",
+    "No tenés que soportar una situación para demostrar fortaleza.",
+    "Contar lo que sucede puede ser importante.",
+    "Buscar un adulto de confianza puede ayudarte.",
+    "No tengas miedo de contar lo que está pasando.",
+    "Lo que ocurre en internet también puede afectar cómo te sentís.",
+    "No todo lo que pasa online debería quedarse en silencio.",
+    "Tus límites también existen en internet.",
+    "Merecés sentirte seguro/a tanto online como en persona.",
+    "Pensá antes de compartir algo que pueda lastimar a otra persona.",
+    "Detrás de una pantalla también hay una persona.",
+    "La tecnología puede conectar, no lastimar.",
+    "Usar internet responsablemente también es cuidarnos.",
+    "No respondas a una agresión con otra agresión.",
+    "Guardá evidencia y buscá ayuda cuando una situación online te supera.",
+    "No tenés que enfrentar el acoso digital solo/a.",
+    "Tu privacidad importa.",
+    "Cuidar tus datos también es cuidarte.",
+    "No compartas información personal con cualquiera.",
+    "Tu seguridad importa en todos los espacios.",
+    "Sentirte incómodo/a es una señal que merece atención.",
+    "Si algo no se siente bien, podés hablarlo.",
+    "Confiá en las personas que respetan tus límites.",
+    "Un vínculo sano permite hablar sin miedo.",
+    "Una amistad debería darte seguridad, no miedo constante.",
+    "Los buenos vínculos se construyen con respeto.",
+    "No necesitás aceptar malos tratos para conservar una relación.",
+    "Alejarte de una situación dañina también puede ser cuidarte.",
+    "Poner límites no te convierte en una mala persona.",
+    "Tus límites merecen ser respetados.",
+    "También tenés derecho a cambiar de ambiente.",
+    "Elegir con quién compartir tu tiempo es válido.",
+    "Merecés relaciones donde puedas expresarte.",
+    "No tenés que esconder quién sos para encajar.",
+    "Ser diferente no significa ser menos.",
+    "Tus características no determinan tu valor.",
+    "No permitas que una opinión defina quién sos.",
+    "Una crítica no determina tu identidad.",
+    "Tu valor no depende de la aprobación de los demás.",
+    "No necesitás demostrar tu valor constantemente.",
+    "Sos mucho más que un momento difícil.",
+    "Sos mucho más que un error.",
+    "Sos mucho más que una calificación.",
+    "Sos mucho más que lo que otras personas piensan de vos.",
+    "Tu identidad se construye con muchas partes.",
+    "Permitite descubrir quién querés ser.",
+    "No tenés que tener todo decidido todavía.",
+    "Está bien no saber qué hacer algunas veces.",
+    "Preguntar también es aprender.",
+    "Pedir orientación puede ayudarte.",
+    "No saber no significa no poder.",
+    "Aprender lleva tiempo.",
+    "Cada pequeño avance cuenta.",
+    "No subestimes los pequeños pasos.",
+    "Avanzar lentamente también es avanzar.",
+    "Celebrá tus progresos.",
+    "Reconocé el esfuerzo que hacés.",
+    "No todo progreso se ve desde afuera.",
+    "A veces, sobrevivir un día difícil ya requiere mucho esfuerzo.",
+    "Date crédito por seguir intentando.",
+    "No seas demasiado duro/a con vos mismo/a.",
+    "Hablá con vos mismo/a como hablarías con alguien que querés.",
+    "Merecés tratarte con paciencia.",
+    "Los errores también forman parte del aprendizaje.",
+    "No necesitás castigarte por equivocarte.",
+    "Podés aprender y volver a intentarlo.",
+    "Una caída no elimina todo lo que avanzaste.",
+    "Tu pasado no determina completamente tu futuro.",
+    "Siempre podés buscar una nueva manera de hacer las cosas.",
+    "Cambiar puede ser difícil y aun así valer la pena.",
+    "No tenés que cambiar para ser aceptado/a.",
+    "Los cambios importantes llevan tiempo.",
+    "Sé paciente con tu proceso.",
+    "Permitite empezar de nuevo.",
+    "Cada día puede ser una nueva oportunidad.",
+    "No importa si hoy avanzaste poquito.",
+    "Un pequeño paso sigue siendo un paso.",
+    "Buscá algo bueno dentro de tu día.",
+    "A veces lo pequeño también importa.",
+    "Una canción puede cambiar un momento.",
+    "Una charla puede aliviar una preocupación.",
+    "Un descanso puede ayudarte a recuperar energía.",
+    "Salir un rato de la rutina puede hacerte bien.",
+    "Encontrá espacios donde puedas sentirte tranquilo/a.",
+    "Rodearte de personas que te respetan importa.",
+    "Tu entorno puede influir en cómo te sentís.",
+    "Merecés espacios donde puedas estar en paz.",
+    "Tu casa, escuela y comunidad deberían ser espacios seguros.",
+    "Si un espacio no se siente seguro, buscá apoyo.",
+    "No tengas miedo de pedir acompañamiento.",
+    "Hay adultos que pueden ayudarte.",
+    "Un docente también puede ser alguien a quien recurrir.",
+    "Un preceptor puede ayudarte a buscar una solución.",
+    "Tu familia o una persona de confianza puede escucharte.",
+    "Un profesional también puede acompañarte.",
+    "Buscar orientación es una forma responsable de cuidarte.",
+    "No tenés que saber exactamente qué necesitás para pedir ayuda.",
+    "Podés empezar contando una pequeña parte.",
+    "Decir cómo te sentís ya es un comienzo.",
+    "No hace falta esperar a estar al límite para hablar.",
+    "Pedir ayuda temprano puede facilitar las cosas.",
+    "No ignores aquello que se repite.",
+    "Si algo te preocupa, contalo.",
+    "Si algo te da miedo, buscá apoyo.",
+    "Si algo te lastima emocionalmente, merece atención.",
+    "Tus emociones pueden darte información importante.",
+    "Escuchar tus emociones no significa dejar que controlen todo.",
+    "Podés sentir varias emociones al mismo tiempo.",
+    "No existe una forma correcta de sentir.",
+    "Cada persona procesa las situaciones de manera diferente.",
+    "Compararte puede hacer que olvides tu propio proceso.",
+    "Tu camino es único.",
+    "No necesitás ir al ritmo de los demás.",
+    "No estás atrasado/a en tu vida.",
+    "Todavía tenés mucho por descubrir.",
+    "El futuro no está completamente escrito.",
+    "Hay oportunidades que todavía no conocés.",
+    "Las cosas pueden cambiar.",
+    "Las situaciones difíciles no duran para siempre.",
+    "Un momento complicado no define todo tu futuro.",
+    "Permitite imaginar algo mejor.",
+    "Tus sueños también importan.",
+    "No abandones todo lo que te hace ilusión.",
+    "Seguí buscando aquello que te motiva.",
+    "Encontrar un propósito puede llevar tiempo.",
+    "Está bien explorar diferentes caminos.",
+    "No necesitás tener todas las respuestas a tu edad.",
+    "Aprendé a conocerte sin apurarte.",
+    "Descubrirte también es crecer.",
+    "Tus intereses pueden cambiar.",
+    "Tus objetivos pueden cambiar.",
+    "Cambiar de idea también forma parte de crecer.",
+    "No tengas miedo de aprender algo nuevo.",
+    "La curiosidad puede abrir nuevas puertas.",
+    "Preguntar puede ser el comienzo de algo nuevo.",
+    "Nunca es tarde para aprender.",
+    "No dejes que el miedo decida todo por vos.",
+    "Podés avanzar aunque tengas dudas.",
+    "Tener miedo no significa que no puedas hacerlo.",
+    "Ser valiente no significa no tener miedo.",
+    "A veces ser valiente es pedir ayuda.",
+    "A veces ser valiente es poner un límite.",
+    "A veces ser valiente es decir lo que sentís.",
+    "A veces ser valiente es reconocer que necesitás apoyo.",
+    "No tenés que demostrar fortaleza todo el tiempo.",
+    "También podés permitirte estar vulnerable.",
+    "Mostrar lo que sentís puede acercarte a otros.",
+    "Hablar genera oportunidades para comprenderse.",
+    "La comunicación puede prevenir muchos conflictos.",
+    "Decir lo que necesitás ayuda a los demás a entenderte.",
+    "No esperes que los demás adivinen cómo te sentís.",
+    "Cuando puedas, expresá lo que necesitás.",
+    "Elegí un momento tranquilo para hablar.",
+    "Buscá una persona con quien te sientas seguro/a.",
+    "No hace falta hablar con todo el mundo.",
+    "Una persona de confianza puede ser suficiente para comenzar.",
+    "Tu historia merece ser escuchada con respeto.",
+    "No permitas que alguien invalide constantemente lo que sentís.",
+    "Que otra persona no lo entienda no significa que no sea importante.",
+    "Tus emociones no necesitan comparación.",
+    "No existe un problema demasiado pequeño para hablarlo.",
+    "Si algo te preocupa, merece un espacio.",
+    "No tengas vergüenza de pedir orientación.",
+    "No estás molestando por hablar de lo que necesitás.",
+    "Cuidarte no es egoísmo.",
+    "Cuidarte te permite estar mejor con los demás.",
+    "Tu bienestar merece un lugar en tu rutina.",
+    "Reservá momentos para descansar.",
+    "Buscá actividades que disfrutes.",
+    "Pasar tiempo con personas que te hacen bien puede ayudarte.",
+    "Salir al aire libre puede ser una pausa agradable.",
+    "Dormir y descansar también forman parte del cuidado personal.",
+    "Comer y mantener rutinas saludables ayuda a cuidar tu bienestar.",
+    "No busques perfección en tus hábitos.",
+    "Pequeños cambios pueden ser útiles.",
+    "No tenés que cambiar todo de una vez.",
+    "Elegí un pequeño objetivo para hoy.",
+    "Mañana podés elegir otro.",
+    "Tu bienestar se construye poco a poco.",
+    "Tené paciencia con vos mismo/a.",
+    "No te castigues por tener días malos.",
+    "Los días difíciles también terminan.",
+    "Permitite descansar después de un día complicado.",
+    "Mañana tendrás otra oportunidad.",
+    "No sabés qué cosas buenas pueden aparecer más adelante.",
+    "Dejá espacio para las sorpresas.",
+    "No todo tiene que estar bajo control.",
+    "Aceptar que algunas cosas no dependen de vos puede aliviar.",
+    "Concentrate en aquello que sí podés hacer.",
+    "Un paso concreto puede ayudarte a sentir más claridad.",
+    "Cuando todo parezca demasiado, empezá por algo pequeño.",
+    "Ordenar tus pensamientos puede ayudarte a ordenar tus acciones.",
+    "Escribir lo que sentís puede ayudarte a expresarlo.",
+    "Hablar también puede ayudarte a organizar tus ideas.",
+    "No necesitás encontrar una solución perfecta.",
+    "Buscá una solución posible.",
+    "Pedí una segunda opinión cuando la necesites.",
+    "Escuchar diferentes perspectivas puede ayudarte.",
+    "No tenés que decidir todo inmediatamente.",
+    "Date tiempo para pensar.",
+    "Elegí con calma cuando puedas.",
+    "Tu bienestar también debe formar parte de tus decisiones.",
+    "No permitas que la presión de otros decida por vos.",
+    "Tu opinión importa.",
+    "Tus límites importan.",
+    "Tus necesidades importan.",
+    "Tu seguridad importa.",
+    "Tu tranquilidad importa.",
+    "Tu voz importa.",
+    "Tu historia importa.",
+    "Tu bienestar importa.",
+    "Vos importás.",
+    "No estás solo/a para pedir ayuda.",
+    "Siempre podés buscar una persona de confianza.",
+    "Siempre podés empezar una conversación.",
+    "Siempre podés pedir orientación.",
+    "Siempre podés volver a intentarlo.",
+    "Siempre podés aprender algo nuevo.",
+    "Siempre podés dar un pequeño paso.",
+    "Siempre podés elegir cuidarte.",
+    "Siempre podés hablar.",
+    "No necesitás esperar a que todo empeore.",
+    "Escuchá las señales que te indican que necesitás apoyo.",
+    "Si algo te supera, buscá compañía.",
+    "Si una situación se repite, contala.",
+    "Si alguien te lastima, buscá ayuda.",
+    "Si alguien te amenaza o intimida, contáselo a un adulto de confianza.",
+    "Si sufrís bullying, no tenés que enfrentarlo solo/a.",
+    "Si ves que alguien está pasando por algo difícil, acercate con respeto.",
+    "Una palabra amable puede cambiar un momento.",
+    "Acompañar también significa escuchar.",
+    "No juzgues lo que no conocés.",
+    "Preguntá antes de asumir.",
+    "Escuchá antes de responder.",
+    "La empatía puede comenzar con una pregunta sencilla.",
+    "Decir 'estoy acá' puede significar mucho.",
+    "No siempre necesitás solucionar el problema de otra persona.",
+    "A veces alcanza con escuchar y acompañar.",
+    "Todos necesitamos apoyo en algún momento.",
+    "Nadie tiene que poder con todo siempre.",
+    "Buscar ayuda forma parte de cuidarse.",
+    "Hablar puede abrir una puerta.",
+    "No cierres esa puerta por miedo a molestar.",
+    "Tu bienestar merece ser escuchado.",
+    "Hoy también podés elegir cuidarte.",
+    "Hoy también podés pedir ayuda.",
+    "Hoy también podés hablar.",
+    "Hoy también podés descansar.",
+    "Hoy también podés empezar de nuevo.",
+    "Hoy puede ser un buen día para escucharte.",
+    "Tomate un momento para preguntarte cómo estás.",
+    "No ignores lo que tu mente y tu cuerpo te están diciendo.",
+    "Cuidarte empieza por prestar atención.",
+    "No necesitás tener todo resuelto para estar avanzando.",
+    "El progreso puede ser silencioso.",
+    "Tus pequeños logros también cuentan.",
+    "Reconocé todo lo que ya superaste.",
+    "No olvides cuánto aprendiste en el camino.",
+    "Tu crecimiento lleva tiempo.",
+    "Tu historia todavía se está escribiendo.",
+    "Todavía quedan momentos que no viviste.",
+    "Todavía quedan personas que podés conocer.",
+    "Todavía quedan cosas que podés aprender.",
+    "Todavía quedan sueños por descubrir.",
+    "No dejes que un mal momento escriba toda tu historia.",
+    "Una situación difícil no es toda tu vida.",
+    "Podés construir nuevos momentos.",
+    "Podés buscar nuevos espacios.",
+    "Podés crear nuevos vínculos.",
+    "Podés aprender nuevas herramientas.",
+    "Podés pedir ayuda.",
+    "Podés hablar.",
+    "Podés cuidarte.",
+    "Podés empezar de nuevo.",
+    "Y no tenés que hacerlo todo solo/a."
+];
+
+// ==========================================
+// MOSTRAR LA FRASE SEGÚN EL DÍA DEL AÑO
+// ==========================================
+
+function showDailyQuote() {
+    const quoteElement = document.getElementById("dailyQuote");
+
+    if (!quoteElement) return;
+
+    const today = new Date();
+
+    // Primer día del año
+    const start = new Date(today.getFullYear(), 0, 0);
+
+    // Diferencia entre hoy y el comienzo del año
+    const difference = today - start;
+
+    // Cantidad de milisegundos que tiene un día
+    const oneDay = 1000 * 60 * 60 * 24;
+
+    // Obtener el número del día del año
+    const dayOfYear = Math.floor(difference / oneDay);
+
+    // Seleccionar una frase
+    const quoteIndex = (dayOfYear - 1) % dailyQuotes.length;
+
+    // Mostrar la frase
+    quoteElement.textContent = `“${dailyQuotes[quoteIndex]}”`;
+}
+    </script>
+</body>
+</html>
